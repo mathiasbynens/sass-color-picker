@@ -423,7 +423,7 @@
 					$codeOutput.trigger('vanish');
 				});
 			} else {
-				$form.on('change', 'input[type=range]', function(e) {
+				$form.on('input', 'input[type=range]', function(e) {
 					var $el = $(e.target), 
 						val = $el.val(),
 						id  = $el.attr('id');
